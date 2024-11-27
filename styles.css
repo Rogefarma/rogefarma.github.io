@@ -1,112 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@charset "UTF-8";
+
+@font-face {
+    font-family: Andika;
+    src: url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+}
 
 :root {
-  --light-color: #666;
-  --box-shadow: 0 .5rem 1.5rem rgb(0, 0, 0, .1);
-  --red: #fe0500;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgb(0, 0, 0, .1);
+    --red: #fe0500;
+    --light-red: #f47a79;
 }
 
-*{
-  font-family: 'Andika';
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;  
-  border: none;
-  outline: none;
-  text-decoration: none;
-  text-transform: none;
-  transition: all .2s linear, background-color 0.2s ease-in-out;
+* {
+    font-family: 'Andika', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: all .2s linear, background-color 0.2s ease-in-out;
 }
 
-html{
-  font-size: 62.5%;
-  overflow-x: hidden;
-  scroll-padding-top: 7rem;
-  scroll-behavior: smooth;
+html, body {
+    width: 100%;
 }
 
-body{
-  background-color: #fff;
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
 }
 
-/*header*/
+body {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 2;
+}
 
-.header{
-  height: 100px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 9%;
-  background-image: linear-gradient(to right, #fe0500, #ff6b6b);
-  z-index: 1000;
-  box-shadow: var(--box-shadow);
+header {
+    height: 10em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background-color: var(--red);
+    box-shadow: var(--box-shadow);
 }
 
 .logo {
-  height: 80%;
-  display: flex;
-  align-items: center;
+    height: 80%;
+    display: flex;
+    align-items: center;
 }
 
-.header .logo img {
-  height: 80%;
-  display: inline-black;
-  transition: transform 0.3s ease;
-  transform: scale(1);
+.logo img {
+    height: 80%;
+    transition: transform 0.3s ease;
+    transform: scale(1);
 }
 
-.header h1 {
-  font-size: 22px;
-  color: white;
-}
-
-.header .headbar a{
-    font-size: 3rem;
-    border-radius: .5rem;
-    padding: .5rem 1.5rem;
+header h1 {
+    font-size: 22px;
     color: white;
-    
 }
 
-.header .headbar a:hover{
+.headbar a {
+    font-family: Andika, sans-serif;
+    font-size: 2rem;
+    border-radius: .5rem;
+    padding: .5rem 2rem;
+    color: white;
+
+}
+
+.headbar a:hover {
     color: var(--red);
     background: white;
-    
+
 }
 
-.header .menubtn{
+.menubtn {
     margin-right: 80px;
-    
+
 }
 
-.header .menubtn button{
+.menubtn button {
     padding: 10px 45px;
     text-align: center;
     font-size: 14px;
     color: #fff;
     border: none;
-    background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
+    background-image: linear-gradient(to right, #649bff, #0070fa, #649bff);
     border-radius: 10px;
     cursor: pointer;
 }
 
-/*header*/
-
-/*main*/
-
-
-.main{
+main {
     width: 100%;
-    display: flex;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.main .left{
-    padding-top: 50px;
-    text-align: center;
+.textbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 10em;
+}
+
+.left {
     line-height: 1.6;
     display: flex;
     align-items: center;
@@ -114,51 +125,47 @@ body{
     flex-direction: column;
 }
 
-.main .left h2{
-    padding-top: 40%;
+.left h2 {
     font-size: 15px;
-    text-transform: capitalize;
     color: var(--light-color);
-    margin-top: 100px;    
+    margin-top: 100px;
 }
 
-.main .left h1{
+.left h1 {
     font-size: 42px;
-    text-transform: capitalize;
     font-weight: 500;
     margin-left: 35px;
 }
 
-.main .left p{
+.left p {
     margin-bottom: 20px;
     font-size: 15px;
-    color: var(--dark-color);
-    
-}
-
-.main .left button{
-    padding-top: 12px;
-    padding: 15px 45px;
-    text-align-last: center;
-    font-size: 14px;
     color: black;
-    border: 1px solid;
-    box-shadow: var(--box-shadow);
-    background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
-    border-radius: 15px;
-    cursor: pointer;        
+
 }
 
-.main .right img{
-    padding-top: 25%;
+.left button {
+    padding: 15px 45px;
+    font-size: 1.6em;
+    color: white;
+    border: 2px var(--red) solid;
+    box-shadow: var(--box-shadow);
+    background-color: var(--red);
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.left button:hover {
+    color: var(--red);
+    background-color: white;
+}
+
+.right img {
     width: 100%;
     height: 100%;
     display: flex;
     margin-left: 0;
 }
-
-
-
 
 
 /*main*/

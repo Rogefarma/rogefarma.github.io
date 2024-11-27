@@ -1,302 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@charset "UTF-8";
 
-:root {
-  --light-color: #666;
-  --box-shadow: 0 .5rem 1.5rem rgb(0, 0, 0, .1);
-  --red: #fe0500;
+main {
+    background-color: white;
+    flex-direction: column;
+    padding-top: 1em;
 }
 
-*{
-    font-family: 'Andika';
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    text-transform: none;
-    transition: all .2s linear, background-color 0.2s ease-in-out;
+#apresentacao {
+    text-align: center;
+    margin-bottom: 1em;
 }
 
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top: 7rem;
-    scroll-behavior: smooth;
+#apresentacao h2 {
+    font-size: 3em;
 }
 
-body{
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+#apresentacao p {
+    font-size: 1.7em;
 }
 
-.container{
-    width: 90%;
-    max-width: 2200px;
-    margin: 0 auto;
-}
-
-.container-fluid{
-    padding: 1rem;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: var(--box-shadow);
-}
-
-/* Estilo do Cabeçalho */
-
-/*header*/
-
-.header{
-    height: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;  
+.ofertas-flex {
     display: flex;
     align-items: center;
-    border: 1px solid;
-    justify-content: space-between;
-    padding: 2rem 9%;
-    background: background-image-linear-gradient(to right,#fe0500,#ff6b6b);
-    z-index: 1000;
-    box-shadow: var(--box-shadow);        
-}
-
-.header .logo img{
-    margin-top: 16px;
-    width: 110px;
-    height: 97%;
-    display: inline-black;
-    transition: transform 0.3s ease;
-    transform: scale(1);    
-}
-
-.header .headbar a{
-    font-size: 1.7rem;
-    border-radius: .5rem;
-    padding: .5rem 1.5rem;
-    color: var(red);
-}
-
-.header .headbar a:hover{
-    color: #fff;
-    background: background-image-linear-gradient(to right,#fe0500,#ff6b6b);
-    
-}
-
-.header .menubtn{
-    margin-right: 80px;
-    
-} 
-
-.header .menubtn button{
-    padding: 10px 45px;
-    text-align: center;
-    font-size: 14px;
-    color: #fff;
-    border: none;
-    background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
-    border-radius: 10px;
-    cursor: pointer;
-    
-}
-
-/* Seção de Apresentação */
-apresentacao {
-    padding: 40px 0;
-    background-color: red;
-    text-align: center;
-}
-
-apresentacao h2 {
-    font-size: 2rem;
-}
-
-apresentacao img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-/* Ofertas da Semana */
-ofertas {
-    padding: 40px 0;
-}
-
-ofertas h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
 .oferta {
-    display: inline-block;
-    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40em;
+    min-height: 40em;
     text-align: center;
-    margin: 0 2.5%;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: .6em;
+    box-sizing: border-box;
+    padding: 1em;
+    border: solid .5em var(--red);
 }
 
 .oferta img {
-    width: 100%;
-    height: auto;
+    width: 50%;
 }
 
 .oferta h3 {
-    margin-top: 10px;
-    font-size: 1.5rem;
-}
-
-/* Imagens das ofertas */
-.oferta img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.oferta img:hover {
-    transform: scale(1.05);
-}
-
-/* Estilo para a Grid de Ofertas */
-.ofertas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 5fr, -30%));
-    gap: 20px;
-    justify-items: center;
-    margin-top: 20px;
-}
-
-/* Estilo das Ofertas Individuais */
-.oferta {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.oferta img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.oferta h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-family: Andika, sans-serif;
+    font-size: 2em;
 }
 
 .oferta p {
-    font-size: 1rem;
-    margin-bottom: 15px;
+    font-size: 1.3em;
 }
 
-.oferta button {
-    background-color: #007bff;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease;
-}
-
-.oferta button:hover {
-    background-color: #0056b3;
-}
-
-/* Efeito de Hover nas Ofertas */
-.oferta:hover {
-    transform: translateY(-10px);
-}
-
-/* Melhorias nas seções */
-#apresentacao, #ofertas, #contato {
-    padding: 60px 0;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
-
-/* Estilo para a Seção de Produtos */
-#produtos {
-    padding: 60px 0;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-#produtos h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#produtos p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-}
-
-.produtos-lista {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.produto {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    min-width: 280px;
-}
-
-.produto img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-}
-
-.produto h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.produto p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-}
-
-
-/* Rodapé */
 footer {
-    background-color: red;
+    height: 5em;
+    width: 100%;
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
     color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    .oferta {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+    margin-top: 1em;
 }
