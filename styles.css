@@ -40,7 +40,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    flex-shrink: 2;
 }
 
 header {
@@ -107,6 +106,37 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    padding: 3em 0;
+}
+
+#intro {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+.map, .ofertas-painel {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 5em;
+    padding: 5em 0;
+    border-top: solid 3px black;
+    background-color: white;
+    color: black;
+}
+
+.map h1, .ofertas-painel h1 {
+    font-family: Andika, sans-serif;
+    font-weight: 500;
+    font-size: 3em;
 }
 
 .textbox {
@@ -144,7 +174,7 @@ main {
 
 }
 
-.left button {
+.left button, .ofertas-painel button {
     padding: 15px 45px;
     font-size: 1.6em;
     color: white;
@@ -155,7 +185,7 @@ main {
     cursor: pointer;
 }
 
-.left button:hover {
+.left button:hover, .ofertas-painel button:hover {
     color: var(--red);
     background-color: white;
 }
@@ -167,9 +197,14 @@ main {
     margin-left: 0;
 }
 
-
-/*main*/
-
-
-
-
+footer {
+    height: 4em;
+    width: 100%;
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    color: white;
+    margin-top: 1em;
+}
