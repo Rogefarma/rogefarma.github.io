@@ -120,7 +120,7 @@ main {
 }
 
 .map, .ofertas-painel {
-    width: 80%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,12 +171,12 @@ main {
     margin-bottom: 20px;
     font-size: 15px;
     color: black;
-
 }
 
-.left button, .ofertas-painel button {
+.button {
     padding: 15px 45px;
     font-size: 1.6em;
+    font-family: Andika, sans-serif;
     color: white;
     border: 2px var(--red) solid;
     box-shadow: var(--box-shadow);
@@ -185,7 +185,7 @@ main {
     cursor: pointer;
 }
 
-.left button:hover, .ofertas-painel button:hover {
+.button:hover {
     color: var(--red);
     background-color: white;
 }
@@ -207,4 +207,25 @@ footer {
     font-size: 1.7rem;
     color: white;
     margin-top: 1em;
+    text-align: center;
+}
+
+#contato {
+    text-align: center;
+}
+
+#contato div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#contato h2 {
+    font-size: 2em;
+}
+
+#contato p {
+    font-size: 1.7em;
 }
