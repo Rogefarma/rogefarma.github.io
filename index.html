@@ -14,6 +14,7 @@
 
         <!-- link para css file -->
         <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" type="text/css" href="mobile.css">
         <!-- link para css file -->
     </head>
     <body>
@@ -30,7 +31,17 @@
             </nav>
 
             <h1>Farmácia Online</h1>
+            <div id="menu" style="display: none">
+                <img src="imagens/menu.png" alt="...">
+            </div>
         </header>
+
+        <section id="menu-options" style="display: none">
+            <nav class="headbar">
+                <a href="index.html">Inicio</a>
+                <a href="ofertas.html">Ofertas</a>
+            </nav>
+        </section>
 
         <!-- header section -->
 
@@ -67,5 +78,6 @@
             <p>&copy; 2024 Farmácia Saúde & Bem-Estar. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="main.js"></script>
     </body>
 </html>

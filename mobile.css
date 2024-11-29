@@ -1,0 +1,100 @@
+@media screen and (max-width: 480px) {
+    header {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    #menu-options nav {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    #menu-options nav a {
+        border-bottom: solid 2px white;
+        width: 100%;
+        border-radius: 0;
+        font-size: 2em;
+    }
+
+    #menu {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 4em;
+    }
+
+    #menu img {
+        width: 100%;
+    }
+
+    .headbar {
+        display: none;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    #intro {
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .textbox, .textbox h1, .textbox h2 {
+        margin: 0;
+    }
+
+    .textbox h1 {
+        font-size: 3.5em;
+    }
+
+    .button {
+        padding: 10px 30px;
+    }
+
+    .textbox * {
+        text-align: center;
+    }
+
+    .map {
+        width: 90%;
+    }
+
+    .map iframe {
+        height: 400px;
+    }
+
+    .ofertas-painel {
+        text-align: center;
+    }
+
+    /* Página ofertas.html */
+    .oferta {
+        width: 30em;
+        min-height: 30em;
+    }
+
+    .oferta h3 {
+        font-size: 1.7em;
+    }
+
+    #apresentacao h2 {
+        font-size: 2em;
+    }
+
+    #apresentacao p {
+        font-size: 1.5em;
+    }
+}

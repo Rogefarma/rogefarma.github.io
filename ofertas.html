@@ -6,6 +6,7 @@
     <title>Farmácia Saúde & Bem-Estar</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="ofertas.css">
+    <link rel="stylesheet" type="text/css" href="mobile.css">
     <link rel="icon" type="image/x-icon" href="imagens/icon.ico">
     <!-- link google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -13,7 +14,6 @@
 </head>
 
 <body>
-
 <!-- Cabeçalho -->
 <header>
     <a href="index.html" class="logo">
@@ -27,8 +27,17 @@
     </nav>
 
     <h1>Farmácia Online</h1>
+    <div id="menu" style="display: none">
+        <img src="imagens/menu.png" alt="...">
+    </div>
 </header>
 
+<section id="menu-options" style="display: none">
+    <nav class="headbar">
+        <a href="index.html">Inicio</a>
+        <a href="ofertas.html">Ofertas</a>
+    </nav>
+</section>
 
 
 <!-- Seção de Ofertas -->
@@ -36,8 +45,9 @@
     <!-- Seção de Apresentação -->
     <section id="apresentacao">
         <div class="container">
-            <h2>Veja nossas ofertas</h2>
-            <p>Somos uma farmácia dedicada ao seu bem-estar e saúde. Encontre os melhores produtos com preços especiais para
+            <h2>Veja as nossas ofertas</h2>
+            <p>Somos uma farmácia dedicada ao seu bem-estar e saúde. Encontre os melhores produtos com preços especiais
+                para
                 você e a sua família!</p>
         </div>
     </section>
@@ -123,7 +133,8 @@
 <section id="contato">
     <div class="container">
         <p>Ficou com alguma dúvida ou deseja realizar um pedido?</p>
-        <a class="button" href="https://wa.me/5517932248787?text=Gostaria%20de%20fazer%20um%20pedido!">Entre em contato</a>
+        <a class="button" href="https://wa.me/5517932248787?text=Gostaria%20de%20fazer%20um%20pedido!">Entre em
+            contato</a>
 </section>
 
 <!-- Rodapé -->
@@ -132,6 +143,6 @@
         <p>&copy; 2024 Farmácia Saúde & Bem-Estar. Todos os direitos reservados.</p>
     </div>
 </footer>
-
+<script src="main.js"></script>
 </body>
 </html>
